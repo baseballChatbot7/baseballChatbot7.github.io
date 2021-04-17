@@ -36,6 +36,13 @@ authors:
     email: wjb1218@gmail.com
     web: https://JongbinWoo.github.io/
     description: "DeepLearning"
+  Usurper47:
+    name: Il Seo
+    display_name: Usurper47
+    gravatar: 6c101366f33c5e2b0db7e7fef3095202
+    email: joil47@ajou.ac.kr
+    web: https://usurper.tistory.com/
+    description: "ML, DL, Knowledge Tracing"
   
 # Plugins
 plugins:
