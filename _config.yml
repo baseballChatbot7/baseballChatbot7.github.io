@@ -29,6 +29,13 @@ authors:
     email: dr_lunars@naver.com
     web: https://velog.io/@skaurl
     description: "nlp, statistics"
+  JongbinWoo:
+    name: Jongbin
+    display_name: JongbinWoo
+    gravatar: 1cbae5884b4a9413b5bb167ba0c36b82
+    email: wjb1218@gmail.com
+    web: https://JongbinWoo.github.io/
+    description: "DeepLearning"
   
 # Plugins
 plugins:
