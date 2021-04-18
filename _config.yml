@@ -50,6 +50,12 @@ authors:
     email: u_yeongjae@naver.com
     web: https://velog.io/@uyzae
     description: "nlp, data-mining"
+  b8choi:
+    name: Byeongmin Choi
+    display_name: b8choi
+    email: jincbm@naver.com
+    web: https://b8choi@github.io
+    description: "NLP, Knowledge Representation"
   
 # Plugins
 plugins:
