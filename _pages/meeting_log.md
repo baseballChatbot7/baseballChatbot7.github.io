@@ -2,7 +2,7 @@
 noteId: "ceb15df0aa5311eba5608f6a6c3cac1f"
 layout: page
 title: "meeting_log"
-permalink: /meeting_log
+permalink: /meeting_log/
 comments: false
 
 ---
