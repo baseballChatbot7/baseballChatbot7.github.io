@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ""
 url: "https://baseballChatbot7.github.io"
 google_analytics: 'UA-xxxxxxxx-1'
-disqus: 'demowebsite'
+disqus: 'baseballchatbot7'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
@@ -36,6 +36,26 @@ authors:
     email: wjb1218@gmail.com
     web: https://JongbinWoo.github.io/
     description: "DeepLearning"
+  Usurper47:
+    name: Il Seo
+    display_name: Usurper47
+    gravatar: 6c101366f33c5e2b0db7e7fef3095202
+    email: joil47@ajou.ac.kr
+    web: https://usurper.tistory.com/
+    description: "ML, DL, Knowledge Tracing"
+  uyeongjae:
+    name: Yeongjae Yu
+    display_name: uyeongjae
+    gravatar: 43b31499b3b5be4be1d8ea8776c26f02
+    email: u_yeongjae@naver.com
+    web: https://velog.io/@uyzae
+    description: "nlp, data-mining"
+  b8choi:
+    name: Byeongmin Choi
+    display_name: b8choi
+    email: jincbm@naver.com
+    web: https://b8choi@github.io
+    description: "NLP, Knowledge Representation"
   
 # Plugins
 plugins:
