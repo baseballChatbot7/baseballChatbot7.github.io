@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>KBOBERT-1 | Baseball Chat</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>KBOBERT-1 | Baseball Chatbot</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="KBOBERT-1" />
+<meta name="author" content="skaurl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="KBOBERT-1" />
+<meta property="og:description" content="KBOBERT-1" />
+<link rel="canonical" href="http://localhost:4000/kbobert-1/" />
+<meta property="og:url" content="http://localhost:4000/kbobert-1/" />
+<meta property="og:site_name" content="Baseball Chatbot" />
+<meta property="og:image" content="http://localhost:4000/assets/images/BERT.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-24T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/BERT.png" />
+<meta property="twitter:title" content="KBOBERT-1" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"skaurl"},"url":"http://localhost:4000/kbobert-1/","image":"http://localhost:4000/assets/images/BERT.png","headline":"KBOBERT-1","dateModified":"2021-04-24T00:00:00+09:00","datePublished":"2021-04-24T00:00:00+09:00","author":{"@type":"Person","name":"skaurl"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/kbobert-1/"},"description":"KBOBERT-1","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/categories#MRC">MRC</a></li>      
+        <li><a href="/categories#NER">NER</a></li>
+        <li><a href="/categories#Backend">Backend</a></li>   
+        <li><a href="/meeting_log/">Meeting Log</a></li>             
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="Baseball Chat">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">KBOBERT-1</h1>
+    <!-- Author & Date  Box -->
+    
+    
+    <div class="d-flex align-items-center mt-4">
+        <div>
+            
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/202e850e5f0b9603223ba94cc692d7d1?s=250&d=mm&r=x" alt="skaurl">
+            
+        </div>            
+        <div>
+        Written by <a target="_blank" class="text-dark" href="https://velog.io/@skaurl">skaurl</a> on 
+        <span class="post-date"><time class="post-date" datetime="2021-04-24">24 Apr 2021</time></span>           
+        
+        </div>            
+    </div>
+    
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+<div class="entry-featured-image">
+    
+    <img class="featured-image " src="/assets/images/BERT.png" alt="KBOBERT-1">
+    
+</div>
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    
+    <!-- End Toc -->
+    <h1 id="kbobert-1">KBOBERT-1</h1>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>야구 도메인에 특화된 BERT로 NER과 MRC를 개발하면 성능이 더 좋을 것 같다고 생각했습니다. 만약 성능이 나쁘다고 하더라도, 대체할 수 있는 pretrain된 BERT들이 존재하기 때문에 부담 없이 진행해볼 수 있었습니다.</p>
+
+<h2 id="data">Data</h2>
+
+<p>우선 KBO와 관련된 뉴스 기사 약 46,000건을 수집했습니다. 이후 야구 관련 위키 데이터와 일반 위키 데이터를 추가하면 pretrain을 하기에는 충분하다고 판단했습니다. KBO 관련 뉴스 데이터 크롤러는 해당 <a href="https://github.com/baseballChatbot7/KBOBERT/blob/main/KBO_NEWS_Crawler.py">repo</a>를 참고하시면 됩니다.</p>
+
+<h2 id="train">Train</h2>
+
+<p>BERT 학습을 위한 코드를 모두 직접 구현한다면 가장 좋겠지만, 시간상의 문제로 어려움이 있었습니다. 그래서 Hugging Face를 사용하여 BERT를 학습했습니다. 이후 MRC도 Hugging Face를 활용할 계획이기 때문에, 해당 방법이 가장 좋다고 판단했습니다. BERT 학습은 해당 <a href="https://github.com/baseballChatbot7/KBOBERT/blob/main/KBOBERT_pre-training.py">repo</a>를 참고하시면 됩니다.
+그리고 학습은 V100으로 이루어졌습니다.</p>
+
+<h2 id="test">Test</h2>
+
+<p>정상적으로 BERT가 학습되는지 확인하기 위해, KBO 뉴스 기사 약 46,000건으로 학습 후 테스트해 보았습니다.
+그 <a href="https://github.com/baseballChatbot7/KBOBERT/wiki/Test-1">결과</a>, 야구 도메인에 관련된 단어를 [MASK] 처리하더라도 예측을 잘하는 모습을 확인할 수 있었습니다. 이로 미루어 보아, 학습 데이터를 더 추가한다면 충분히 사용할만한 BERT가 학습될 것 같습니다.</p>
+
+</div>
+
+<!-- Rating -->
+
+
+<!-- Author Box if enabled from _config.yml -->
+<!-- Author Box -->
+
+
+
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+ 
+<div class="comments">
+    <button class="btn btn-dark show-comments">Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'baseballchatbot7'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=KBOBERT-1&url=http://localhost:4000/kbobert-1/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/kbobert-1/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/kbobert-1/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class=" related-posts ">  
+
+    
+    <h2 class="text-center mb-4">Explore more like this</h2>
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    
+    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/categories#MRC">MRC</a>                
+    
+
+    <!-- Tags -->  
+    
+    
+
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+            <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/kbobert-2/">
+                
+
+                    
+                        <img class="img-thumb" src="/assets/images/BERT.png" alt="KBOBERT-2"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/kbobert-2/">KBOBERT-2</a>
+                
+            </h2>
+            <h4 class="card-text">KBOBERT-2
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/202e850e5f0b9603223ba94cc692d7d1?s=250&d=mm&r=x" alt="skaurl">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://velog.io/@skaurl">skaurl</a></span> 
+                
+                <span class="post-date">01 May 2021</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+            
+            
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+            <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/kbo-record-crawler/">
+                
+
+                    
+                        <img class="img-thumb" src="/assets/images/Crawler.jpeg" alt="KBO Record Crawler"> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/kbo-record-crawler/">KBO Record Crawler</a>
+                
+            </h2>
+            <h4 class="card-text">KBO Record Crawler
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/202e850e5f0b9603223ba94cc692d7d1?s=250&d=mm&r=x" alt="skaurl">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://velog.io/@skaurl">skaurl</a></span> 
+                
+                <span class="post-date">17 Apr 2021</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+            
+            
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        </div>        
+</div>
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+    </div>
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 Baseball Chat 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
+<script id="dsq-count-scr" src="//baseballchatbot7.disqus.com/count.js"></script>
+
+
+</body>
+</html>

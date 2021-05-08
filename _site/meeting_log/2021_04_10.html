@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>meeting_log_2021.04.10 | Baseball Chat</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>meeting_log_2021.04.10 | Baseball Chatbot</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="meeting_log_2021.04.10" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2021.04.10 회의록" />
+<meta property="og:description" content="2021.04.10 회의록" />
+<link rel="canonical" href="http://localhost:4000/meeting_log/2021_04_10" />
+<meta property="og:url" content="http://localhost:4000/meeting_log/2021_04_10" />
+<meta property="og:site_name" content="Baseball Chatbot" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-10T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="meeting_log_2021.04.10" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/meeting_log/2021_04_10","headline":"meeting_log_2021.04.10","dateModified":"2021-04-10T00:00:00+09:00","datePublished":"2021-04-10T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/meeting_log/2021_04_10"},"description":"2021.04.10 회의록","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/categories#MRC">MRC</a></li>      
+        <li><a href="/categories#NER">NER</a></li>
+        <li><a href="/categories#Backend">Backend</a></li>   
+        <li><a href="/meeting_log/">Meeting Log</a></li>             
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="Baseball Chat">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">meeting_log_2021.04.10</h1>
+    <!-- Author & Date  Box -->
+    
+    
+    <div class="d-flex align-items-center mt-4">
+        <div>
+            
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&d=mm&r=x" alt="">
+            
+        </div>            
+        <div>
+        Written by <a target="_blank" class="text-dark" href=""></a> on 
+        <span class="post-date"><time class="post-date" datetime="2021-04-10">10 Apr 2021</time></span>           
+        
+        </div>            
+    </div>
+    
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    
+    <!-- End Toc -->
+    <h1 id="20210410-회의록">2021.04.10 회의록</h1>
+
+<ul>
+  <li>필요한 기능 선정
+    <ol>
+      <li>카테고리 선택</li>
+      <li>질문 입력</li>
+      <li>NER로 개체명 인식</li>
+      <li>(NER로 카테고리 미리 만들기?, 자주 들어오는 개체명의 질문 딕셔너리 형태로 만들어두기? DB 작업으로 바뀌어서 빨라진다!)</li>
+      <li>Elasticsearch로 (사전구축 된) 문서DB 검색</li>
+      <li>MRC</li>
+      <li>답변 출력</li>
+    </ol>
+  </li>
+</ul>
+
+<p>dst는 어디로 가야할까요?</p>
+
+<ul>
+  <li>업무 분담</li>
+  <li>구체화</li>
+  <li>카테고리
+    <ul>
+      <li>선수: 나무위키</li>
+      <li>구단: 나무위키</li>
+      <li>기록: pdf 인형 눈깔 붙이기, 세이버 메트릭스 문서화</li>
+      <li>용어</li>
+      <li>기타</li>
+    </ul>
+  </li>
+  <li></li>
+  <li>워드프레스? github pages</li>
+  <li>github organization WIKI 형태로</li>
+  <li>실시간 기록 기능</li>
+  <li><a href="https://kr.betsapi.com/l/349/Korean-KBO">api???</a></li>
+  <li><a href="https://www.koreabaseball.com/Board/Qna/List.aspx#">api!!!</a></li>
+  <li>
+    <p>korquad2.0 data 표관련 참조</p>
+  </li>
+  <li>각자 팀으로 모이기
+    <ul>
+      <li>팀으로 구분</li>
+      <li>백엔드 팀 : 전재열, 조민정, 최병민, 서일(예비)</li>
+      <li>MRC 팀 : 김남혁, 우종빈, 유영재</li>
+    </ul>
+  </li>
+  <li>백엔드
+    <ul>
+      <li>플라스크를 쓸거다</li>
+      <li>Mysql을 쓸거다</li>
+      <li>엘라스틱 서치</li>
+      <li>mrc로 넘길지 우리가 할지
+        <ul>
+          <li>백엔드 팀에서 하는 게 맞지 않을까?</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<!-- Rating -->
+
+
+<!-- Author Box if enabled from _config.yml -->
+<!-- Author Box -->
+
+
+
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=meeting_log_2021.04.10&url=http://localhost:4000/meeting_log/2021_04_10" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/meeting_log/2021_04_10" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/meeting_log/2021_04_10" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class="">  
+
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    
+    
+
+    <!-- Tags -->  
+    
+    
+
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        </div>        
+</div>
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+    </div>
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 Baseball Chat 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
+<script id="dsq-count-scr" src="//baseballchatbot7.disqus.com/count.js"></script>
+
+
+</body>
+</html>
