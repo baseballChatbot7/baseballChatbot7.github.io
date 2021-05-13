@@ -1,6 +1,44 @@
-I"K<!-- Posts Index
+I"A<!-- Posts Index
 ================================================== -->
 <div class="blog-grid-container">
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/elasticsearch-1/">
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/elasticsearch-1/">Elasticsearch-1</a>
+                
+            </h2>
+            <h4 class="card-text">
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&amp;d=mm&amp;r=x" alt="" />
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href=""></a></span> 
+                
+                <span class="post-date">13 May 2021</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
     
         <!-- begin post -->
 
@@ -194,50 +232,6 @@
                 </span>
                 <span class="author-meta">
                 <span class="post-name"><a target="_blank" href=""></a></span> 
-                
-                <span class="post-date">17 Apr 2021</span>
-                </span>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end post -->
-    
-        <!-- begin post -->
-
-
-<div class="blog-grid-item">
-    <div class="card h-100">
-        <div class="maxthumb">
-            <a href="/kbo-record-crawler/">
-                
-
-                    
-                        <img class="img-thumb" src="/assets/images/Crawler.jpeg" alt="KBO Record Crawler" /> 
-                    
-
-                
-            </a>
-        </div>
-        <div class="card-body">
-            <h2 class="card-title">
-                <a class="text-dark" href="/kbo-record-crawler/">KBO Record Crawler</a>
-                
-            </h2>
-            <h4 class="card-text">KBO Record Crawler
-</h4>
-        </div>
-        <div class="card-footer bg-white">
-            <div class="wrapfooter">
-                
-                <span class="meta-footer-thumb">
-                
-                <img class="author-thumb" src="https://www.gravatar.com/avatar/202e850e5f0b9603223ba94cc692d7d1?s=250&amp;d=mm&amp;r=x" alt="skaurl" />
-                
-                </span>
-                <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="https://velog.io/@skaurl">skaurl</a></span> 
                 
                 <span class="post-date">17 Apr 2021</span>
                 </span>
