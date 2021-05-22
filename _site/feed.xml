@@ -5,9 +5,78 @@
     <description>We can answer your questions about baseball</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 May 2021 23:26:18 +0900</pubDate>
-    <lastBuildDate>Thu, 13 May 2021 23:26:18 +0900</lastBuildDate>
+    <pubDate>Sat, 22 May 2021 11:57:11 +0900</pubDate>
+    <lastBuildDate>Sat, 22 May 2021 11:57:11 +0900</lastBuildDate>
     <generator>Jekyll v4.0.1</generator>
+    
+      <item>
+        <title>meeting_log_2021.05.15</title>
+        <description>&lt;h1 id=&quot;20210515-회의록&quot;&gt;2021.05.15 회의록&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;김남혁 님:
+    &lt;ul&gt;
+      &lt;li&gt;엘라스틱 서치는 세팅한 대로 쓰시면 될 것 같습니다.
+        &lt;ul&gt;
+          &lt;li&gt;책으로 공부하면서 알게된 기능이 하나 있습니다.&lt;/li&gt;
+          &lt;li&gt;7.0.0버전을 사용하면 유용한 플러그인을 달 수 있을 것 같다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;inference 속도는 크게 신경을 안써도 될 것 같다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;서일 님:
+    &lt;ul&gt;
+      &lt;li&gt;오늘 밤을 새서라도 드리겠다고 말씀을 드렸는데, 내일 밤을 새서라도 말씀을 드리겠다.&lt;/li&gt;
+      &lt;li&gt;https://huggingface.co/monologg/koelectra-small-v3-discriminator/tree/main 모델을 해보면 될 것 같다.
+        &lt;ul&gt;
+          &lt;li&gt;https://huggingface.co/monologg/distilkobert/tree/main 이거보다도 가볍다&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;내일 아침 6시까지 만들어 보겠습니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;유영재 님:
+    &lt;ul&gt;
+      &lt;li&gt;NER을 음절 단위로 잘라서 학습을 해보는데, 코랩에서 학습을 해보니까 엄청나게 오래 걸리더라.&lt;/li&gt;
+      &lt;li&gt;그래서 로컬에서 테스트를 해보고 있다.&lt;/li&gt;
+      &lt;li&gt;아직 보여드릴 건 없는 상황이다.&lt;/li&gt;
+      &lt;li&gt;남혁 님:
+        &lt;ul&gt;
+          &lt;li&gt;질문이 고유명사를 포함하는 경우, 그걸 활용하여 문서를 더 잘 가져올 수 있을 것 같다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;백엔드 팀(조민정 님, 최병민 님)
+    &lt;ul&gt;
+      &lt;li&gt;병민 님 : 엘라스틱 서치를 서버에 올려서 테스트를 해보고 있다.&lt;/li&gt;
+      &lt;li&gt;민정 님 : 남혁 님의 경우를 보면 inference의 속도가 큰 영향이 없을 거 같은데,
+        &lt;ul&gt;
+          &lt;li&gt;네트워크 상태를 고려한 지연 답변 대처를 위한 프로세스 구축 중&lt;/li&gt;
+          &lt;li&gt;메모리 이슈가 있다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;엘라스틱 서치를 지원해주는 서버를 사용하거나,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;다음 주까지 할 일
+    &lt;ul&gt;
+      &lt;li&gt;김남혁 님 : 엘라스틱 서치 javacafe 설치&lt;/li&gt;
+      &lt;li&gt;서일 님 : 야구 전용 QA 모델 작성하기&lt;/li&gt;
+      &lt;li&gt;우종빈 님 : 위키 데이터 한번 더 검토하기&lt;/li&gt;
+      &lt;li&gt;유영재 님 : NER&lt;/li&gt;
+      &lt;li&gt;조민정 님 : 지연과 서버문제에 대해서 해결할 예정&lt;/li&gt;
+      &lt;li&gt;최병민 님 : 엘라스틱 서치 세팅&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 15 May 2021 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/meeting-log-20210515/</link>
+        <guid isPermaLink="true">http://localhost:4000/meeting-log-20210515/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Elasticsearch-1</title>
@@ -130,6 +199,86 @@ print(doc[0])
         
         
         <category>MRC</category>
+        
+      </item>
+    
+      <item>
+        <title>meeting_log_2021.05.08</title>
+        <description>&lt;h1 id=&quot;20210508-회의록&quot;&gt;2021.05.08 회의록&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;김남혁 님 :
+    &lt;ul&gt;
+      &lt;li&gt;일주일에 하나씩 글 써주세요!&lt;/li&gt;
+      &lt;li&gt;실험 일지 같은 느낌으로, 꾸준히 쓰면 좋을 것 같다. 형식 구애X&lt;/li&gt;
+      &lt;li&gt;미뤄놨던 포스팅 다 함.&lt;/li&gt;
+      &lt;li&gt;일반뉴스 + 야구 데이터로 BERT 학습-&amp;gt; 야구를 못맞춘다.
+        &lt;ul&gt;
+          &lt;li&gt;야구 관련한 데이터를 더 많이 확보하여 그 데이터로 학습을 하고 있다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;MRC쪽 수정하는 중
+        &lt;ul&gt;
+          &lt;li&gt;엘라스틱 서치를 시험하는 중이다.&lt;/li&gt;
+          &lt;li&gt;백엔드에서 엘라스틱을 올려주시면, 추가적인 파라미터 실험이나 안쪽 모델 실험은 제가 진행할 수 있을 것 같다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;서일 님 : 데이터 전처리 4페이지 째 수작업으로 하고 있습니다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;우종빈 님 :
+    &lt;ul&gt;
+      &lt;li&gt;mrc 작업하고 있음&lt;/li&gt;
+      &lt;li&gt;retrieval 쪽 작업도 병행하고 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;유영재 님 :
+    &lt;ul&gt;
+      &lt;li&gt;지난 주에서 추가로 테스트를 많이 해보지는 않았는데, 테스트 에러가 있어서 이에 대해서 말해보려고 한다.&lt;/li&gt;
+      &lt;li&gt;심플한 문제, 이름이나 구단명뒤의 조사처리 문제가 있었다. 음절 단위의 개체명 분석이 나을지 형태소가 나을지
+        &lt;ul&gt;
+          &lt;li&gt;서일 님: https://kakaobrain.github.io/pororo/seq2seq/wsd.html 이거 추천합미다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;조민정 님 :
+    &lt;ul&gt;
+      &lt;li&gt;현재 승인받은 유일한 사람입니다.&lt;/li&gt;
+      &lt;li&gt;따라서 혼자서 실험을 해보고 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;최병민 님 :
+    &lt;ul&gt;
+      &lt;li&gt;서버로 가져가기, 전처리 하고 있다.&lt;/li&gt;
+      &lt;li&gt;계층을 어떻게 구조를 만들어야 할까?&lt;/li&gt;
+      &lt;li&gt;엘라스틱 구현할 예정입니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;정리&quot;&gt;정리&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;성능 빼고는 MRC 구현은 어느정도 되었다.
+    &lt;ul&gt;
+      &lt;li&gt;백엔드 팀: 엘라스틱 서치 사용법 전달 받아 붙여두기&lt;/li&gt;
+      &lt;li&gt;MRC 팀: MRC 임시 모델을 만들어서 벡엔드 팀에 전달할 것
+        &lt;ul&gt;
+          &lt;li&gt;코쿼드1.0 으로 임시모델 가볍게 만들어 드리기: py 파일&lt;/li&gt;
+          &lt;li&gt;가볍게, 배치 사이즈 1 모델&lt;/li&gt;
+          &lt;li&gt;입력은 그냥 터미널에서 문서랑 쿼리 때려넣어주기&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 08 May 2021 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/meeting-log-20210508/</link>
+        <guid isPermaLink="true">http://localhost:4000/meeting-log-20210508/</guid>
+        
         
       </item>
     
@@ -499,102 +648,6 @@ fhsdjkfhsjfhsjkhf&lt;/p&gt;
         <pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/test/</link>
         <guid isPermaLink="true">http://localhost:4000/test/</guid>
-        
-        
-        <category>Backend</category>
-        
-      </item>
-    
-      <item>
-        <title>meeting_log_2021.04.10</title>
-        <description>&lt;h1 id=&quot;20210410-회의록&quot;&gt;2021.04.10 회의록&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;필요한 기능 선정
-    &lt;ol&gt;
-      &lt;li&gt;카테고리 선택&lt;/li&gt;
-      &lt;li&gt;질문 입력&lt;/li&gt;
-      &lt;li&gt;NER로 개체명 인식&lt;/li&gt;
-      &lt;li&gt;(NER로 카테고리 미리 만들기?, 자주 들어오는 개체명의 질문 딕셔너리 형태로 만들어두기? DB 작업으로 바뀌어서 빨라진다!)&lt;/li&gt;
-      &lt;li&gt;Elasticsearch로 (사전구축 된) 문서DB 검색&lt;/li&gt;
-      &lt;li&gt;MRC&lt;/li&gt;
-      &lt;li&gt;답변 출력&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;dst는 어디로 가야할까요?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;업무 분담&lt;/li&gt;
-  &lt;li&gt;구체화&lt;/li&gt;
-  &lt;li&gt;카테고리
-    &lt;ul&gt;
-      &lt;li&gt;선수: 나무위키&lt;/li&gt;
-      &lt;li&gt;구단: 나무위키&lt;/li&gt;
-      &lt;li&gt;기록: pdf 인형 눈깔 붙이기, 세이버 메트릭스 문서화&lt;/li&gt;
-      &lt;li&gt;용어&lt;/li&gt;
-      &lt;li&gt;기타&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;워드프레스? github pages&lt;/li&gt;
-  &lt;li&gt;github organization WIKI 형태로&lt;/li&gt;
-  &lt;li&gt;실시간 기록 기능&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://kr.betsapi.com/l/349/Korean-KBO&quot;&gt;api???&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.koreabaseball.com/Board/Qna/List.aspx#&quot;&gt;api!!!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;korquad2.0 data 표관련 참조&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;각자 팀으로 모이기
-    &lt;ul&gt;
-      &lt;li&gt;팀으로 구분&lt;/li&gt;
-      &lt;li&gt;백엔드 팀 : 전재열, 조민정, 최병민, 서일(예비)&lt;/li&gt;
-      &lt;li&gt;MRC 팀 : 김남혁, 우종빈, 유영재&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;백엔드
-    &lt;ul&gt;
-      &lt;li&gt;플라스크를 쓸거다&lt;/li&gt;
-      &lt;li&gt;Mysql을 쓸거다&lt;/li&gt;
-      &lt;li&gt;엘라스틱 서치&lt;/li&gt;
-      &lt;li&gt;mrc로 넘길지 우리가 할지
-        &lt;ul&gt;
-          &lt;li&gt;백엔드 팀에서 하는 게 맞지 않을까?&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 10 Apr 2021 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/meeting_log/2021_04_10</link>
-        <guid isPermaLink="true">http://localhost:4000/meeting_log/2021_04_10</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Les Ambassadeurs, the first Restaurant we Visited in Paris</title>
-        <description>&lt;p&gt;Within the Hôtel de Crillon, which was built in 1758, Les Ambassadeurs operated as a restaurant since the mid-19th century. It reached its peak of fame as a restaurant and nightclub (a café-concert) in the last three decades of the 19th century.&lt;/p&gt;
-
-&lt;p&gt;Always a center of entertainment for the aristocracy, in the 1870s it also became a regular destination of some of the best known figures of art and the demi-monde. Edgar Degas and Henri de Toulouse-Lautrec portrayed visitors at the night club, and Aristide Bruant performed there.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It was decorated in an 18th-century rococo style, redesigned by Sybille de Margérie with furnishings by Sonia Rykiel.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Following a renovation of the hotel in 1981–85, the restaurant occupied a former private ballroom with windows looking out on the Place de la Concorde, a few hundred meters from the Palais Garnier.&lt;/p&gt;
-
-&lt;p&gt;Les Ambassadeurs had two Michelin stars. In the last decade of its operation, chef was Dominique Bouchet  followed by Jean-François Piège and finally when the hotel closed in 2013 for an extended renovation, Christopher Hache.&lt;/p&gt;
-
-&lt;p&gt;In 2017 Hache opened a smaller restaurant, L’Écrin, within the renovated hotel; the former space of Les Ambassadeurs became a bar.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 02 Feb 2020 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/les-ambassadeurs/</link>
-        <guid isPermaLink="true">http://localhost:4000/les-ambassadeurs/</guid>
-        
-        <category>France</category>
         
         
         <category>Backend</category>
