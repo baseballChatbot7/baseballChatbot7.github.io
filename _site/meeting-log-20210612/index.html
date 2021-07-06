@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>meeting_log_2021.06.12 | Baseball Chat</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>meeting_log_2021.06.12 | Baseball Chatbot</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="meeting_log_2021.06.12" />
+<meta name="author" content="skaurl" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2021.06.12 회의록 김남혁 님: 네트워킹 데이랑 하는 작업이 조금 겹친다. 플라스크 서빙 단계에서, 전처리 후처리를 작업하고 있다. 후처리는 조사 제거 전처리는 서치 오탈자, dudxkcjfl -&gt; 영타처리도 작업하고 있음(지금은 두 쿼리를 그냥 날려버리는 걸로) 로그 파일 기록도 가능하면 좋을 것 같습니다." />
+<meta property="og:description" content="2021.06.12 회의록 김남혁 님: 네트워킹 데이랑 하는 작업이 조금 겹친다. 플라스크 서빙 단계에서, 전처리 후처리를 작업하고 있다. 후처리는 조사 제거 전처리는 서치 오탈자, dudxkcjfl -&gt; 영타처리도 작업하고 있음(지금은 두 쿼리를 그냥 날려버리는 걸로) 로그 파일 기록도 가능하면 좋을 것 같습니다." />
+<link rel="canonical" href="http://localhost:4000/meeting-log-20210612/" />
+<meta property="og:url" content="http://localhost:4000/meeting-log-20210612/" />
+<meta property="og:site_name" content="Baseball Chatbot" />
+<meta property="og:image" content="http://localhost:4000/assets/images/%ED%9A%8C%EC%9D%98%EB%A1%9D.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-12T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/%ED%9A%8C%EC%9D%98%EB%A1%9D.png" />
+<meta property="twitter:title" content="meeting_log_2021.06.12" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"skaurl"},"url":"http://localhost:4000/meeting-log-20210612/","image":"http://localhost:4000/assets/images/%ED%9A%8C%EC%9D%98%EB%A1%9D.png","headline":"meeting_log_2021.06.12","dateModified":"2021-06-12T00:00:00+09:00","datePublished":"2021-06-12T00:00:00+09:00","author":{"@type":"Person","name":"skaurl"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/meeting-log-20210612/"},"description":"2021.06.12 회의록 김남혁 님: 네트워킹 데이랑 하는 작업이 조금 겹친다. 플라스크 서빙 단계에서, 전처리 후처리를 작업하고 있다. 후처리는 조사 제거 전처리는 서치 오탈자, dudxkcjfl -&gt; 영타처리도 작업하고 있음(지금은 두 쿼리를 그냥 날려버리는 걸로) 로그 파일 기록도 가능하면 좋을 것 같습니다.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/categories#MRC">MRC</a></li>      
+        <li><a href="/categories#NER">NER</a></li>
+        <li><a href="/categories#Backend">Backend</a></li>   
+        <li><a href="/meeting_log/">Meeting Log</a></li>             
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="Baseball Chat">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">meeting_log_2021.06.12</h1>
+    <!-- Author & Date  Box -->
+    
+    
+    <div class="d-flex align-items-center mt-4">
+        <div>
+            
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/202e850e5f0b9603223ba94cc692d7d1?s=250&d=mm&r=x" alt="skaurl">
+            
+        </div>            
+        <div>
+        Written by <a target="_blank" class="text-dark" href="https://velog.io/@skaurl">skaurl</a> on 
+        <span class="post-date"><time class="post-date" datetime="2021-06-12">12 Jun 2021</time></span>           
+        
+        </div>            
+    </div>
+    
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+<div class="entry-featured-image">
+    
+    <img class="featured-image " src="/assets/images/회의록.png" alt="meeting_log_2021.06.12">
+    
+</div>
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    
+    <!-- End Toc -->
+    <h1 id="20210612-회의록">2021.06.12 회의록</h1>
+<ul>
+  <li>김남혁 님: 네트워킹 데이랑 하는 작업이 조금 겹친다.
+    <ul>
+      <li>플라스크 서빙 단계에서, 전처리 후처리를 작업하고 있다.</li>
+      <li>후처리는 조사 제거</li>
+      <li>전처리는 서치 오탈자, dudxkcjfl -&gt; 영타처리도 작업하고 있음(지금은 두 쿼리를 그냥 날려버리는 걸로)</li>
+      <li>로그 파일 기록도 가능하면 좋을 것 같습니다.</li>
+    </ul>
+  </li>
+  <li>우종빈 님:
+    <ul>
+      <li>onnx로 추론 속도를 빠르게 만들고 있다.</li>
+    </ul>
+  </li>
+  <li>유영재 님:
+    <ul>
+      <li>룰 베이스 제작 중이다.</li>
+      <li>ner 엘렉트라 스몰로 학습하고 있다. 성능은 잘 나오고 있고, 오늘 공유할 예정이다.</li>
+      <li>김남혁 님: 포스팅 부탁드립니다.</li>
+    </ul>
+  </li>
+  <li>조민정,최병민 님:
+    <ul>
+      <li>코드 모듈화 중이다.</li>
+      <li>입력/출력 지연에 대한 대응을 더 구체화 시키고 있다.</li>
+      <li>데드라인이 바뀌면 제공되는 서버를 사용하기 어렵기 때문에, 미리 옮길 서버를 생각해야할 것 같다.
+        <ul>
+          <li>GCP 대비 중</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<!-- Rating -->
+
+
+<!-- Author Box if enabled from _config.yml -->
+<!-- Author Box -->
+
+
+
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+ 
+<div class="comments">
+    <button class="btn btn-dark show-comments">Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'baseballchatbot7'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=meeting_log_2021.06.12&url=http://localhost:4000/meeting-log-20210612/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/meeting-log-20210612/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/meeting-log-20210612/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class="">  
+
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    
+    
+
+    <!-- Tags -->  
+    
+    
+
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        </div>        
+</div>
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+    </div>
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 Baseball Chat 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
+<script id="dsq-count-scr" src="//baseballchatbot7.disqus.com/count.js"></script>
+
+
+</body>
+</html>

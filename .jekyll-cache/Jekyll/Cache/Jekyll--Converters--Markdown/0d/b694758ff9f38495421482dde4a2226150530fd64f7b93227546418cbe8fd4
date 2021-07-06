@@ -1,0 +1,126 @@
+I"7<h1 id="카카오-봇을-만들어-보자">카카오 봇을 만들어 보자</h1>
+
+<h2 id="준비물">준비물</h2>
+
+<ul>
+  <li>카카오 봇과 통신할 서버</li>
+  <li>FLASK</li>
+</ul>
+
+<h2 id="1-서버-구축하기">1. 서버 구축하기</h2>
+
+<p>우선, 해당 프로젝트에서 서버는 FLASK로 구성되어 있다.<br />
+그렇다면 서버는 어디에 구축해야할까? <br />
+나는 우선 AWS에 서버를 구축하고자 하였다. <br />
+@<a href="https://aws.amazon.com/ko/free/?trk=ps_a134p000003yHYmAAM&amp;trkCampaign=acq_paid_search_brand&amp;sc_channel=PS&amp;sc_campaign=acquisition_KR&amp;sc_publisher=Google&amp;sc_category=Core-Main&amp;sc_country=KR&amp;sc_geo=APAC&amp;sc_outcome=acq&amp;sc_detail=aws&amp;sc_content=Brand_Core_aws_e&amp;sc_segment=444218215904&amp;sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Core-Main|Core|KR|EN|Text&amp;s_kwcid=AL!4422!3!444218215904!e!!g!!aws&amp;ef_id=Cj0KCQjw78yFBhCZARIsAOxgSx3rXWSipdhn3Pw6TpGlvsh7Z0lWqzNYZcdYdJN-y73HNkR4HfRFn8oaAnRQEALw_wcB:G:s&amp;s_kwcid=AL!4422!3!444218215904!e!!g!!aws&amp;all-free-tier.sort-by=item.additionalFields.SortRank&amp;all-free-tier.sort-order=asc&amp;awsf.Free%20Tier%20Types=*all&amp;awsf.Free%20Tier%20Categories=*all">aws 서버 구축</a></p>
+
+<p><img src="https://user-images.githubusercontent.com/68745983/120215008-30748380-c270-11eb-9d64-39ff224e070c.png" alt="image" /></p>
+
+<ul>
+  <li>AWS의 프리티어 지원을 해주는 인스턴스를 선택하여 서버를 구성하였습니다.</li>
+  <li><strong>자, 그럼 이제 FLASK를 서버에 설치해줄까요?</strong></li>
+  <li><a href="https://salguworld.tistory.com/12">참고 블로그</a></li>
+  <li><img src="https://user-images.githubusercontent.com/68745983/120216486-0e7c0080-c272-11eb-8e2f-f4ff018a00ba.png" alt="image" /></li>
+  <li>이렇게 FLASK가 설치된 것을 확인할 수 있다.</li>
+  <li>그렇다면 이제 서버를 돌려보도록 하자 &gt;&lt;</li>
+</ul>
+
+<h2 id="2-서버-구성하기">2. 서버 구성하기</h2>
+
+<p>우선 Toy Code를 만들어 서버를 열고 확인해보자.</p>
+
+<pre><code>from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/keyboard')
+def Keyboard():
+    dataSend = {
+    }
+    return jsonify(dataSend)
+
+if __name__ == "__main__":
+    app.run(host = '0.0.0.0', port = 5000)
+
+</code></pre>
+<p>위의 코드를 돌리고 서버의 url:5000/에 접속해보자.
+<img src="https://user-images.githubusercontent.com/68745983/120227780-cfa37600-c284-11eb-9c2f-9b149180c648.png" alt="image" /></p>
+
+<p>잘 실행되는 것을 확인 할 수 있다. <br />
+자, 그렁다면 이제 카카오 챗봇과 서버를 연결해줘야한다.</p>
+
+<h2 id="3-챗봇-연결하기">3. 챗봇 연결하기</h2>
+<h3 id="1-챗봇-만들기">1. 챗봇 만들기</h3>
+
+<p>@<a href="https://center-pf.kakao.com/">카카오 채널 관리자 센터</a></p>
+
+<p>위의 url을 통해 카카오 채널을 만들어 주자. 여기서 주의해야하는 것은</p>
+
+<p>** 대시보드 &gt; 프로필 설정 &gt; 채널 공개**를 허용해야한다. <br />
+<img src="https://user-images.githubusercontent.com/68745983/120228061-59ebda00-c285-11eb-9189-09dbfb831f49.png" alt="image" /></p>
+
+<p>자, 그렇다면 카카오 오픈빌더를 통해 챗봇을 생성하여 생성된 오픈채널과 연결해주어야한다. <br />
+그러면 카카오 오픈빌더에서 챗봇을 만들어 보자.</p>
+
+<p>@<a href="https://i.kakao.com/">카카오 채널 챗봇 만들기</a></p>
+
+<p>해당 페이지를 들어가면 아래와 같이 선택지가 뜨는데 여기서 <strong>카카오톡 채널 챗봇 만들기</strong>를 선택해줘야한다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/68745983/120228240-b2bb7280-c285-11eb-86cf-98f6f178cbdd.png" alt="image" /></p>
+
+<p>여기서 신청서를 조금 자세하게 적으면 승인이 될것이다 (대충 썼다가 한번 반려당했다 + 위의 카카오톡 채널공개 안했다가 한번더 반려당했다.)</p>
+
+<h3 id="2-서버와-챗봇-연결하기">2. 서버와 챗봇 연결하기</h3>
+
+<p>우선 앞서 만들어놓은 server.py code에 아래의 method를 추가해주자.</p>
+
+<pre><code>@app.route('/message', methods=['POST'])
+def Message():
+    content = request.get_json()
+    text = content['userRequest']['utterance'].strip()
+    print(text)
+    if text == "hello":
+        dataSend = {
+                "version": "2.0",
+                "template": {
+                    "outputs": [
+                        {
+                            "simpleText": {
+                                "text": "안녕 함 :)"
+                            }
+                        }
+                    ]
+                }
+            }
+    else:
+        dataSend = {
+                "version": "2.0",
+                "template": {
+                    "outputs": [
+                        {
+                            "simpleText": {
+                                "text": "안녕 못함 :)"
+                            }
+                        }
+                    ]
+                }
+            }
+
+    return jsonify(dataSend)
+</code></pre>
+
+<ul>
+  <li>url:port/message의 경로에 카카오 챗봇이 보내는 형식대로 데이터를 보내면 조건에 따라 “안녕 함:)”, “안녕 못함 :)”을 보내는 함수이다.</li>
+  <li>이를 적용시키고 다시 실행시켜보자.</li>
+  <li>그리고 승인된 챗봇관리 페이지에서 <strong>스킬</strong> 메뉴에 들어가서 <strong>생성</strong>을 눌러 새로운 스킬을 생성하도록하자.</li>
+  <li><img src="https://user-images.githubusercontent.com/68745983/120229445-1fd00780-c288-11eb-8207-d376d7a934e3.png" alt="image" /></li>
+  <li>위의 url에 <strong>url:port/message</strong>를 넣어주면 위의 함수의 조건 즉, hello라고 물어본것이 아니면 모두 “안녕 못함 :)”이라고 답변하는 함수가 작동이 된다.</li>
+</ul>
+
+<h2 id="next-time">Next Time….</h2>
+
+<ul>
+  <li>다음 시간에는 의도치않게 inference 시간이 오래걸려 답변을 하지 못하는 일이 생길 수 있다.</li>
+  <li>해당 경우, 어떻게 대처할지 알아보자.</li>
+</ul>
+:ET
