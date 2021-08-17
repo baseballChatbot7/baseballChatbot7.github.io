@@ -14,4 +14,4 @@ curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.0.0
 tar -xvf elasticsearch-7.0.0-linux-x86_64.tar.gz
 
 #### 서버 실행
-cd elasticsearch-7.0.0/bin/elasticsearch
+elasticsearch-7.0.0/bin/elasticsearch
